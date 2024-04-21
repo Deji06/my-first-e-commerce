@@ -1,0 +1,19 @@
+*{
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+}
+.underline{
+  border: 1px solid hsl(220, 14%, 75%) ;
+  z-index: -1;
+  width: 85%;
+  margin: 10px 100px;
+  position: relative;
+}
+
+@media screen and (max-width:500px) {
+  .underline{
+    display: none;
+  }
+}

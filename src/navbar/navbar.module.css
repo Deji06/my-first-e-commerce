@@ -1,0 +1,163 @@
+nav{
+    display: flex;
+    /* border: 1px solid red; */
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+.menu{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+}
+.toggle,
+.close{
+    width: 40%;
+    display: none;
+    
+}
+.left{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-left: 100px;
+}
+.links{
+    display: flex;
+    gap: 2rem;
+}
+.links a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: hsl(219, 9%, 45%);
+}
+.links a:hover{
+    color: hsl(26, 100%, 55%);
+    text-decoration: underline;
+    text-decoration-color: hsl(26, 100%, 55%);
+    text-decoration-thickness: 3px;
+    text-underline-offset: 2.4rem;
+}
+.right{
+    display: flex;
+    gap: 2rem;
+    margin-right: 40px;
+    position: relative;
+}
+.right img{
+    width: 20%;
+}
+.cart{
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 0 10px;
+    cursor: pointer;
+    /* background-color: red; */
+}
+.cart img{
+    width: 100%;
+}
+span{
+    position: absolute;
+    top: 0;
+    right: 4px;
+    background-color: hsl(26, 100%, 55%);
+    padding: 0px 5px;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+.cartDisplay{
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    width: 100%;
+    padding: 40px 100px;
+    position: absolute;
+    top: 80px;
+    right:0;
+    z-index: 50;
+    /* background-color: red; */
+}
+.cartDisplay p {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    width: 150px;
+    margin-left: -70px;
+    /* border: 1px solid red; */
+}
+
+@media screen and (max-width:500px) {
+   *{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+   }
+
+   .underline {
+    display: none;
+   }
+
+   .toggle,
+   .close {
+    display: block;
+   }
+
+   .links {
+    display: none;
+   }
+
+   nav {
+    height: 45px;
+    margin-top: 0;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+   }
+
+   .mobile_links {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    top: 45px;
+    width: 40%;
+    height: calc(100vh - 40px);
+    padding-left: 30px;
+}
+
+.mobile_links a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.menu {
+    /* border: 1px solid green; */
+    margin-left: 30px;
+   }
+
+.left {
+    margin-left: 0;
+   }
+
+.right {
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+   }
+
+   
+   .cart img{
+    width: 100%;
+   }
+}
+
+
+   
+
